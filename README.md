@@ -133,48 +133,14 @@ Vous devriez voir des informations qui permettent de valider la bonne prise en c
 [+] Running 1/0
  ✔ Container zoraxy  Created                                                                                      0.0s
 Attaching to zoraxy
-zoraxy  | dns_ovh_endpoint = ovh-eu
-zoraxy  | dns_ovh_application_key = xxxxxxxxxxxxxxxxxxxx
-zoraxy  | dns_ovh_application_secret = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-zoraxy  | dns_ovh_consumer_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-zoraxy  | DOMAIN_NAME = xxxxxxxx.fr
-zoraxy  | EMAIL_LETSENCRYPT = exemple@mail+.com
-zoraxy  | Contenu du répertoire avant l'exécution de zoraxy :
-zoraxy  | total 49072
-zoraxy  | drwxr-xr-x  1 root root     4096 Mar  7 19:38 .
-zoraxy  | drwxr-xr-x  1 root root     4096 Mar  7 10:49 ..
-zoraxy  | -rw-r--r--  1 root root     1760 Mar  7 10:49 Makefile
-zoraxy  | -rw-r--r--  1 root root     4727 Mar  7 10:49 accesslist.go
-zoraxy  | -rw-r--r--  1 root root     4049 Mar  7 10:49 acme.go
-zoraxy  | -rw-r--r--  1 root root    13517 Mar  7 10:49 api.go
-zoraxy  | -rw-r--r--  1 root root     7987 Mar  7 10:49 cert.go
-zoraxy  | drwxr-xr-x  5 root root     4096 Mar  7 15:07 conf
-zoraxy  | -rw-r--r--  1 root root     9592 Mar  7 10:49 config.go
-zoraxy  | -rw-r--r--  1 root root     7400 Mar  7 10:49 emails.go
-zoraxy  | -rw-r--r--  1 root root      532 Mar  7 10:49 go.mod
-zoraxy  | -rw-r--r--  1 root root   178215 Mar  7 10:49 go.sum
-zoraxy  | drwxr-xr-x  2 root root     4096 Mar  7 19:38 log
-zoraxy  | -rw-r--r--  1 root root     5779 Mar  7 10:49 main.go
-zoraxy  | drwxr-xr-x 27 root root     4096 Mar  7 10:49 mod
-zoraxy  | -rw-r--r--  1 root root     1715 Mar  7 10:49 redirect.go
-zoraxy  | -rw-r--r--  1 root root    28537 Mar  7 10:49 reverseproxy.go
-zoraxy  | -rw-r--r--  1 root root     2461 Mar  7 10:49 router.go
-zoraxy  | -rw-r--r--  1 root root     1371 Mar  7 10:49 routingrule.go
-zoraxy  | -rw-r--r--  1 root root     6037 Mar  7 10:49 start.go
-zoraxy  | -rw-------  1 root root    32768 Mar  7 19:38 sys.db
-zoraxy  | -rwxr-xr-x  1 root root       36 Mar  7 19:38 sys.uuid
-zoraxy  | drwxr-xr-x  2 root root     4096 Mar  7 19:38 tmp
-zoraxy  | -rw-r--r--  1 root root     7232 Mar  7 10:49 vdir.go
-zoraxy  | drwxr-xr-x  7 root root     4096 Mar  7 10:49 web
-zoraxy  | -rw-r--r--  1 root root     2707 Mar  7 10:49 webssh.go
-zoraxy  | -rw-r--r--  1 root root     9941 Mar  7 10:49 wrappers.go
-zoraxy  | drwxr-xr-x  4 root root     4096 Mar  7 19:38 www
-zoraxy  | -rwxr-xr-x  1 root root 49855370 Mar  7 10:49 zoraxy
+zoraxy  | Contenu du fichier .ovhapi:
 
 zoraxy  | dns_ovh_endpoint = ovh-eu
 zoraxy  | dns_ovh_application_key = xxxxxxxxxxxxxxxxxxxx
 zoraxy  | dns_ovh_application_secret = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 zoraxy  | dns_ovh_consumer_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+zoraxy  | Génération du certificat let's 
 
 zoraxy  | Saving debug log to /var/log/letsencrypt/letsencrypt.log
 zoraxy  | Requesting a certificate for xxxxxxxx.fr and *.xxxxxxxx.fr
@@ -192,11 +158,10 @@ zoraxy  | If you like Certbot, please consider supporting our work by:
 zoraxy  |  * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
 zoraxy  |  * Donating to EFF:                    https://eff.org/donate-le
 zoraxy  | - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-zoraxy  | ln: failed to create symbolic link '/opt/zoraxy/src/conf/certs/default.pem': File exists
-zoraxy  | ln: failed to create symbolic link '/opt/zoraxy/src/conf/certs/default.key': File exists
+
+zoraxy. | Démarrage de Zoraxy
+
 zoraxy  | 2024/03/08 18:25:24 [Auth] Authentication session key loaded from database
-
-
 zoraxy  | 2024/03/08 18:25:26 Static Web Server started. Listeing on :5487
 zoraxy  | 2024/03/08 18:25:26 Environment variable ZT_AUTH not defined. Trying to load authtoken from file.
 zoraxy  | 2024/03/08 18:25:26 Unable to read authkey at /var/lib/zerotier-one/authtoken.secret:  exec: "sudo": executable file not found in $PATH
